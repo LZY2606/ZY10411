@@ -1,0 +1,54 @@
+bin/
+build/
+.gradle/
+test.log
+*.swp
+*.iml
+.classpath
+.project
+.settings/
+.idea
+.sonar
+release.sh
+rebel.xml
+src/main/resources/rebel.xml
+
+# macOS presents the committed NFD-encoded charset test fixture back in NFC form,
+# so its precomposed-Unicode name shows up as a phantom untracked file. The tracked
+# fixture is unaffected (Git never untracks a committed path via .gitignore).
+src/test/resources/umlauts-*.zip
+
+# --- 依赖与构建产物（不进交付快照）---
+node_modules/
+bower_components/
+.pnp.*
+dist/
+out/
+target/
+.next/
+.nuxt/
+.svelte-kit/
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+vendor/bundle/
+Pods/
+.cargo/
+.DS_Store
+.env
+.env.*
+*.log
+coverage/
+.coverage
+.nyc_output/
+.cache/
+.parcel-cache/
+.vite/
+.turbo/
+*.tsbuildinfo
